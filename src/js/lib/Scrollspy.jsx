@@ -156,7 +156,7 @@ export default class Scrollspy extends React.Component {
       rect.top + scrollTop + offset
     const elBottom = elTop + el.offsetHeight
 
-    return (elTop < scrollBottom)
+    return (elTop < scrollBottom) && (elBottom >= scrollTop)
   }
 
   _isAtBottom () {

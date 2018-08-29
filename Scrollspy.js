@@ -222,7 +222,7 @@ var Scrollspy = function (_React$Component) {
       var elTop = rootEl ? rect.top + scrollTop - rootRect.top + offset : rect.top + scrollTop + offset;
       var elBottom = elTop + el.offsetHeight;
 
-      return elTop < scrollBottom;
+      return elTop < scrollBottom && elBottom >= scrollTop;
     }
   }, {
     key: '_isAtBottom',
