@@ -70,7 +70,7 @@ var Scrollspy = function (_React$Component) {
         currentClassName: _propTypes2.default.string.isRequired,
         scrolledPastClassName: _propTypes2.default.string,
         style: _propTypes2.default.object,
-        componentTag: _propTypes2.default.oneOf(_propTypes2.default.string, _propTypes2.default.func),
+        componentTag: _propTypes2.default.oneOf([_propTypes2.default.string, _propTypes2.default.func]),
         offset: _propTypes2.default.number,
         rootEl: _propTypes2.default.string,
         onUpdate: _propTypes2.default.func
