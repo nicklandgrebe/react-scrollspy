@@ -21,7 +21,7 @@ export default class Scrollspy extends React.Component {
       currentClassName: PropTypes.string.isRequired,
       scrolledPastClassName: PropTypes.string,
       style: PropTypes.object,
-      componentTag: PropTypes.string,
+      componentTag: PropTypes.oneOf(PropTypes.string, PropTypes.func),
       offset: PropTypes.number,
       rootEl: PropTypes.string,
       onUpdate: PropTypes.func,
@@ -156,7 +156,7 @@ export default class Scrollspy extends React.Component {
       rect.top + scrollTop + offset
     const elBottom = elTop + el.offsetHeight
 
-    return (elTop < scrollBottom) && (elBottom > scrollTop)
+    return (elTop < scrollBottom)
   }
 
   _isAtBottom () {
