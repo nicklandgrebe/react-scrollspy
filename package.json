@@ -2,7 +2,7 @@
   "name": "react-scrollspy",
   "version": "3.3.5",
   "description": "react scrollspy component",
-  "main": "./lib/Scrollspy.js",
+  "main": "./Scrollspy.js",
   "files": [
     "README.md",
     "lib/Scrollspy.js",
@@ -14,7 +14,7 @@
   "scripts": {
     "serve": "NODE_ENV=development webpack-dev-server --inline --hot --color",
     "docs": "NODE_ENV=production webpack",
-    "build": "NODE_ENV=production ./node_modules/.bin/babel ./src/js/lib --out-dir ./lib",
+    "build": "NODE_ENV=production ./node_modules/.bin/babel ./src/js/lib --out-dir .",
     "test": "NODE_ENV=test ./node_modules/.bin/ava __test__/*.js --verbose",
     "prepublish": "yarn run build"
   },
